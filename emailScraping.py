@@ -28,7 +28,9 @@ i = 0
 for num in spam[0].split():
     print("---------------------------")
     print(i)
-    if i < 2600: #This lets you skip the first 2600 datapoints if needed
+    if i < 2600: 
+        #This lets you skip multiple data points if needed. 2600 is Aug 17th 2020 for "robocalls"
+        #4000 is Aug 16h 2020 for "spam"
         i = i +1 
         continue
     #This picks out the date of the each email with the search term above.
